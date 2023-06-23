@@ -4,7 +4,7 @@
   "description": "My project Little-Reminders is for the visitors who want to give themselves a break, who want to reorient and feel inspired. They can also view others posts to get motivated and save their activities in a database and then retrieve them",
   
   "scripts": {
-    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "start": "parcel serve index.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build index.html"
   },
