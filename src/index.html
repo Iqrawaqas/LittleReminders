@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body class="container-fluid">
+    <div class="header-gradient">
+      <h1>Little Reminders <i class="bi bi-alarm"></i></h1>
+      <p>
+        <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapse-submitForm" 
+        role="button" aria-expanded="false" aria-controls="collapse-submitForm">I want to add Mine</a>
+      </p>
+
+      <div class="row">
+        <div class="col">
+          <div class="collapse" id="collapse-submitForm">
+            <div class="card card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+
+
+                <div class="mb-3">
+                  <label for="" class="form-label email">Email address</label>
+                  <input type="text" class="form-control" id="email">
+                  <div class="form-text">Get Suggestions.</div>
+                </div>
+                <p>
+                  <a class="btn btn-primary submit" data-bs-toggle="collapse" href="#collapse-submitForm"
+                  role="button" type="submit" aria-expanded="false" aria-controls="collapse-submitForm">Send Magic Link</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style = "display: none;" class="alert alert-success alert-dismissible fade show" id ="myAlert" role="alert">
+        <strong>Yay, your details has been saved!!!</strong>
+        Now you can easily access your little reminders
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      
+  </div>
+  </body>
+</html>
