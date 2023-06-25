@@ -22,17 +22,17 @@ email.innerText = email.value;
 const submit = document.querySelector(".submit");
 const notification = document.createElement("div");
 
-// submit.addEventListener("click", async (e) => {
-//   e.preventDefault();
-//   insertData();
-//   const alert = document.querySelector(".alert");
-//   alert.style.removeProperty("display");
-// });
-// async function insertData() {
-//   const { data, error } = await supabase
-//     .from("users")
-//     .insert([{ name: name.value, email: email.value }]);
-// }
+submit.addEventListener("click", async (e) => {
+  e.preventDefault();
+  insertData();
+  const alert = document.querySelector(".alert");
+  alert.style.removeProperty("display");
+});
+async function insertData() {
+  const { data, error } = await supabase
+    .from("users")
+    .insert([{ name: name.value, email: email.value }]);
+}
 
 submit.addEventListener("click", async (e) => {
   e.preventDefault();
